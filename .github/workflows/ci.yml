@@ -37,3 +37,8 @@ jobs:
     #  run: npx coveralls < coverage/lcov.info
     #  env:
     #    COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
+    - name: Upload coverage to Coveralls
+      run: npx coveralls < coverage/lcov.info
+      env:
+        COVERALLS_REPO_TOKEN: enG8aEdRwkGe0sNIdE1otwL8yJGBzXMRA
